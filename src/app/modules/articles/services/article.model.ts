@@ -1,5 +1,10 @@
 export class Article {
-  constructor(private title: string, private link: string, private votes = 0) {}
+  constructor(
+    private title: string,
+    private link: string,
+    private votes: number = 0,
+    private minutes: number = 0
+  ) {}
 
   getTitle(): string {
     console.log(this.title); // in order to observe change detection effects
@@ -7,7 +12,7 @@ export class Article {
   }
 
   getMeta(): string {
-    return this.link.replace(/^(https?):\/\//, '').split('/')[0];
+    return this.link.replace(/^(https?):\/\//, "").split("/")[0];
   }
 
   getLink(): string {
@@ -19,6 +24,10 @@ export class Article {
   }
 
   changeVote(vote: 1 | -1): Article {
-    return new Article(this.title, this.link, this.votes + vote);
+    return new Article(this.title, this.link, this.votes + vote, this.minutes);
+  }
+
+  getMinutes(): number {
+    return this.minutes;
   }
 }
