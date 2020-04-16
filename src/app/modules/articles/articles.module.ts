@@ -10,7 +10,11 @@ import { ArticleItemComponent } from './components/article-item/article-item.com
 import { ArticleMetaComponent } from './components/article-meta/article-meta.component';
 import { ArticlesComponent } from './containers/articles/articles.component';
 import { ArticlesService } from './services/articles.service';
+import { Routes, RouterModule } from '@angular/router';
 
+export const routes: Routes = [
+  { path: 'articles', component: ArticlesComponent }
+];
 @NgModule({
   declarations: [
     ArticleFormComponent,
@@ -21,7 +25,7 @@ import { ArticlesService } from './services/articles.service';
     FibonacciPipe,
     DynamicLabelDirective
   ],
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterModule.forRoot(routes)],
   exports: [ArticlesComponent],
   providers: [ArticlesService]
 })
