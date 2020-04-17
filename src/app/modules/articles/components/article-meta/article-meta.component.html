@@ -1,0 +1,4 @@
+<div class="meta">
+  <div class="left">{{ article.getMeta() }}</div>
+  <div [appDynamicLabelDirective]="article.getMinutes()">{{ article.getMinutes() | fibonacci}}</div>
+</div>
