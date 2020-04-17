@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HeaderComponent } from './components/header/header.component';
+import { NotFoundComponent } from './components/notFound/not-found.component';
 import { RootComponent } from './containers/root/root.component';
 import { ArticlesModule } from './modules/articles/articles.module';
 import { AuthModule } from './modules/auth/auth.module';
-import { NotFoundComponent } from './components/notFound/not-found.component';
 
 export const routes: Routes = [
   {
