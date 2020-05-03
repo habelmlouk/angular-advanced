@@ -29,4 +29,4 @@ export const routes: Routes = [
   providers: [],
   bootstrap: [RootComponent]
 })
-export class AppModule {}
+export class AppModule { }

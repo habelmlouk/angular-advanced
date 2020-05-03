@@ -1,8 +1,16 @@
-<div class="ui secondary menu">
-  <a href class="item active">Articles</a>
-  <div class="right menu">
-    <a href class="ui item">Logout</a>
-    <a href class="ui item">Login</a>
-    <a href class="ui item">register</a>
+<!-- Menu Bar -->
+<div class="ui menu">
+  <div class="ui container">
+    <div class="header item borderless">
+      <h1 class="ui header">{{ title }}</h1>
+    </div>
+    <div class="ui secondary menu">
+      <a href class="item active" routerLinkActive="true" routerLink="articles">Articles</a>
+      <div class="right menu">
+        <a href class="ui item" routerLinkActive="true" routerLink="auth/login">Login</a>
+        <a href class="ui item" routerLinkActive="true" routerLink="auth/register">register</a>
+        <a href class="ui item" routerLinkActive="true" routerLink="" *ngIf="authenticated">Logout</a>
+      </div>
+    </div>
   </div>
 </div>

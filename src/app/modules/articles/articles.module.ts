@@ -25,8 +25,8 @@ export const routes: Routes = [
     FibonacciPipe,
     DynamicLabelDirective
   ],
-  imports: [CommonModule, FormsModule, RouterModule.forRoot(routes)],
+  imports: [CommonModule, FormsModule, RouterModule.forChild(routes)],
   exports: [ArticlesComponent],
   providers: [ArticlesService]
 })
-export class ArticlesModule {}
+export class ArticlesModule { }
