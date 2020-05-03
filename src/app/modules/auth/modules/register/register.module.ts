@@ -1,13 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
 import { RegisterFormComponent } from './components/register-form/register-form.component';
 
-const routes: Routes = [{ path: 'register', component: RegisterFormComponent }];
+const routes: Routes = [{ path: '', component: RegisterFormComponent }];
 
 @NgModule({
-  declarations: [],
-  imports: [RouterModule.forChild(routes)],
+  declarations: [RegisterFormComponent],
+  imports: [RouterModule.forChild(routes), CommonModule],
   exports: [],
   providers: []
 })
-export class RegisterModule {}
+export class RegisterModule { }

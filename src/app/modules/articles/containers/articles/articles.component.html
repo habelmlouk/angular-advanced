@@ -1,16 +1,13 @@
-<app-article-form (addedArticle)="onAddedArticle($event)"></app-article-form>
+<div class="ui main text container">
+  <app-article-form (addedArticle)="onAddedArticle($event)"></app-article-form>
 
-<div class="vote-all" *ngIf="articles?.length">
-  <a href (click)="upvoteAll()"><i class="arrow up icon"></i>upvote All</a>
-</div>
+  <div class="vote-all" *ngIf="articles?.length">
+    <a href (click)="upvoteAll()"><i class="arrow up icon"></i>upvote All</a>
+  </div>
 
-<div class="ui grid articles">
-  <!-- ngFor is part of CommonModule -->
-  <app-article-item
-    *ngFor="let article of articles"
-    [article]="article"
-    (upvoteArticle)="onUpvote($event)"
-    (downvoteArticle)="onDownvote($event)"
-    (removedArticle)="onRemoved($event)"
-  ></app-article-item>
+  <div class="ui grid articles">
+    <!-- ngFor is part of CommonModule -->
+    <app-article-item *ngFor="let article of articles" [article]="article" (upvoteArticle)="onUpvote($event)"
+      (downvoteArticle)="onDownvote($event)" (removedArticle)="onRemoved($event)"></app-article-item>
+  </div>
 </div>
