@@ -13,6 +13,7 @@ import { Article } from '../../services/article.model';
   selector: 'app-article-item',
   templateUrl: './article-item.component.html',
   styleUrls: ['./article-item.component.scss'],
+  // il ne change que si on change les Input
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ArticleItemComponent {

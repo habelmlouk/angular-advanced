@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -22,6 +23,8 @@ export const routes: Routes = [
   declarations: [RootComponent, HeaderComponent, NotFoundComponent],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     ArticlesModule,
     AuthModule,
     RouterModule.forRoot(routes)
