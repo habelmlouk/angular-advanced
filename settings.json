@@ -1,0 +1,32 @@
+{
+    "workbench.iconTheme": "file-icons",
+    "editor.fontSize": 10,
+    "files.associations": {},
+    "git.confirmSync": false,
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.synerg": true,
+        "**/.npmignore": true,
+        "**/.idea": true,
+        "**/.settings": true,
+        "**/.vscode": true,
+        "**/.editorconfig": true,
+        "**/*.buildpath": true,
+        "**/*.project": true
+    },
+    "prettier.singleQuote": true,
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[shellscript]": {},
+    "explorer.compactFolders": true
+}
